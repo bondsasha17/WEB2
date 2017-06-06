@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab2</title>
+
+	<style type="text/css">
+		table, tr, td, th {
+			text-align: center;
+			border-color: black;
+			border-style: solid;
+			border-width: 2px;
+			border-collapse: collapse;
+		}
+
+		th {
+			background-color: lightblue;
+		}
+
+		td {
+			padding: 10px;
+		}
+	</style>
+
+	<script type="text/javascript" src="test.js"></script>
+</head>
+
+<body>
+	<button onclick="data.refreshTable()">Refresh</button>
+	<button onclick="data.addRandom()">Add random</button>
+	<button onclick="data.clear()">Clear</button>
+	<button onclick="data.addCustomTriangle()"> Add Custom Triangle</button>
+	
+
+	<table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>AB</th>
+				<th>BC</th>
+				<th>AC</th>
+                <th>AB medium line</th>
+                <th>BC medium line</th>
+                <th>AC medium line</th>
+                <th>Angle bCa</th>
+                <th>Angle cAb</th>
+                <th>Angle aBc</th>
+                <th>Type</th>
+				<th>Operations</th>
+			</tr>
+		</thead>
+		<tbody id="triangles"></tbody>
+	</table>
+
+	<script type="text/javascript">data.refreshTable()</script>	
+</body>
+
+<p>
+<label>Input  side a</label>
+<input id= "SideA" value ="6")>
+<label>Input  side b</label>
+<input id= "SideB" value ="6")>
+<label>Input  side c</label>
+<input id= "SideC" value ="6")>
+</p>
+
+</html>
